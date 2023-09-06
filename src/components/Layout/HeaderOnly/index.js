@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from './Header'
+import Header from '../components/Header'
 
 
-export default function Defaulayout({children}) {
+export default function HeaderOnly({children}) {
   return (
     <div>
       <Header />

@@ -1,15 +1,18 @@
 import React from 'react'
-import Header from './Header'
+import Header from '../components/Header'
 import Sidebar from './Sidebar'
+import classNames from 'classnames/bind'
+import style from './Defautlayout.module.scss'
 
+const cx = classNames.bind(style)
 
 export default function Defaulayout({children}) {
   return (
-    <div>
+    <div className={cx('wrapper')}>
       <Header />
-      <div>
+      <div className={cx('container')}>
         <Sidebar />
-        <div className='content'>
+        <div className={cx('content')}>
           {children}
         </div>
       </div>
