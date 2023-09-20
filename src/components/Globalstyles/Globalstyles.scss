@@ -5,6 +5,7 @@
 :root {
     --defaut-layout-header-height: 60px;
     --defaut-layout-width: 1150px;
+    --text-color: #333;
 }
 
 * {
@@ -22,4 +23,18 @@ body{
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+li {
+    list-style: none;
 }
