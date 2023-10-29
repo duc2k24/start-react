@@ -1,12 +1,14 @@
 import React from "react";
 import classNames from "classnames/bind";
-import style from "./Header.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleXmark,
   faMagnifyingGlass,
   faSpinner,
 } from "@fortawesome/free-solid-svg-icons";
+
+import style from "./Header.module.scss";
+import Button from '../../../Button'
 
 const cx = classNames.bind(style);
 export default function Header() {
@@ -37,7 +39,10 @@ export default function Header() {
         </div>
 
         {/* action */}
-        <div className={cx("action")}></div>
+        <div className={cx("action")}>
+          <Button text >Upload</Button>
+          <Button primary  >Log in</Button>
+        </div>
       </div>
     </header>
   );

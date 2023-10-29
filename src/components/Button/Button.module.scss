@@ -1,0 +1,60 @@
+.wrapper {
+    font-size: 1.6rem;
+    font-weight: 600;
+    min-width: 100px;
+    padding:9px 16px;
+
+    border-radius: 4px;
+
+    background-color: white;
+    border: 1px solid transparent;
+    user-select: none;
+
+    cursor: pointer;
+
+    + .wrapper {
+        margin-left: 12px;
+    }
+
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+// Button type
+
+.primary {
+    background-color: var(--primary-color);
+    color: white;
+
+    &:hover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)),#FE2C55;
+    }
+}
+
+.outline {
+    color: var(--primary-color);
+    border-color: inherit;
+    
+}
+
+.text {
+    border: 1px solid #999;
+    &:hover {
+        background-color: rgba(22, 24, 35, .05);
+        text-decoration: underline;
+    }
+}
+
+// Button size
+
+.small {
+    min-width: 88px;
+    padding: 4px 16px;
+}
+
+.large {
+    padding: 14px 16px;
+    min-width: 140px;
+}
